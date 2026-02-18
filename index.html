@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
@@ -30,6 +30,8 @@
                 50: '#fff1f2',
                 100: '#ffe4e6',
                 200: '#fecdd3',
+                500: '#f43f5e',
+                600: '#e11d48',
               },
             },
             fontFamily: {
@@ -46,9 +48,10 @@
       }
       body {
         font-family: 'Inter', sans-serif;
+        color: #1f2937; /* Gray-800 default for better readability */
       }
       h1, h2, h3, h4, h5, h6 {
-        font-family: 'Playfair Display', serif;
+        font-weight: 700;
       }
       /* Hide scrollbar for clean look in some browsers */
       ::-webkit-scrollbar {
@@ -73,6 +76,8 @@
       a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
       document.head.appendChild(a);
     </script>
+    <!-- SmartPlayer SDK -->
+    <script src="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/sdk.js" async></script>
   <script type="importmap">
 {
   "imports": {

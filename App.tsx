@@ -9,6 +9,7 @@ import { Results } from './components/Results';
 import { Pricing } from './components/Pricing';
 import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
+import { Guarantee } from './components/Guarantee';
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
       <Benefits />
       <Results />
       <Testimonials />
-      <Instructor />
       <Pricing />
+      <Guarantee />
+      <Instructor />
       <FAQ />
       <Footer />
     </main>
