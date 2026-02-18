@@ -4,6 +4,7 @@ export interface Plan {
   period?: string;
   features: string[];
   cta: string;
+  link: string;
   description?: string;
   isPopular?: boolean;
   highlight?: string;

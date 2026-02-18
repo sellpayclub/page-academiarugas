@@ -2,6 +2,13 @@ import { FaqItem, Plan, Testimonial } from "./types";
 
 export const MICHELE_IMAGE_URL = "https://ekfkrwueqwpqakpsrsjt.supabase.co/storage/v1/object/public/imagens%20daniel/MICHELE.jpg";
 
+export const RESULT_IMAGES = [
+  "https://ekfkrwueqwpqakpsrsjt.supabase.co/storage/v1/object/public/imagens%20daniel/1colher-resultado.webp",
+  "https://ekfkrwueqwpqakpsrsjt.supabase.co/storage/v1/object/public/imagens%20daniel/2colher-resultado.webp",
+  "https://ekfkrwueqwpqakpsrsjt.supabase.co/storage/v1/object/public/imagens%20daniel/3colher-resultado.webp",
+  "https://ekfkrwueqwpqakpsrsjt.supabase.co/storage/v1/object/public/imagens%20daniel/4colher-resultado.webp"
+];
+
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 1,
@@ -25,16 +32,6 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const PLANS: Plan[] = [
   {
-    title: "PLANO BÁSICO",
-    price: "R$ 9,90",
-    features: [
-      "Rotina completa de 30 dias de exercícios faciais protocolados"
-    ],
-    description: "Perfeito para quem quer começar agora.",
-    cta: "QUERO O BÁSICO",
-    isPopular: false
-  },
-  {
     title: "PLANO COMPLETO",
     price: "R$ 29,90",
     features: [
@@ -48,8 +45,20 @@ export const PLANS: Plan[] = [
     ],
     description: "Por menos do que o valor de um único creme anti-idade. Você paga uma vez… e pode transformar seu rosto pelos próximos meses.",
     cta: "QUERO O COMPLETO",
+    link: "https://seguro.vitago-suplements.shop/r/FI42VC9BQ8",
     isPopular: true,
     highlight: "MELHOR CUSTO-BENEFÍCIO"
+  },
+  {
+    title: "PLANO BÁSICO",
+    price: "R$ 9,90",
+    features: [
+      "Rotina completa de 30 dias de exercícios faciais protocolados"
+    ],
+    description: "Perfeito para quem quer começar agora.",
+    cta: "QUERO O BÁSICO",
+    link: "https://seguro.vitago-suplements.shop/r/BU4O3HZWG8",
+    isPopular: false
   }
 ];
 

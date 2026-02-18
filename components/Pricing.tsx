@@ -87,9 +87,12 @@ export const Pricing: React.FC = () => {
                     </ul>
                 </div>
 
-                <button className={`w-full py-4 rounded-xl font-bold text-lg transition-all transform hover:-translate-y-1 shadow-lg uppercase ${plan.isPopular ? 'bg-green-500 hover:bg-green-600 text-white hover:shadow-green-500/30' : 'bg-purple-100 hover:bg-purple-200 text-purple-900'}`}>
+                <a 
+                  href={plan.link}
+                  className={`block w-full text-center py-4 rounded-xl font-bold text-lg transition-all transform hover:-translate-y-1 shadow-lg uppercase ${plan.isPopular ? 'bg-green-500 hover:bg-green-600 text-white hover:shadow-green-500/30' : 'bg-purple-100 hover:bg-purple-200 text-purple-900'}`}
+                >
                   {plan.cta}
-                </button>
+                </a>
               </div>
             </motion.div>
           ))}

@@ -5,6 +5,7 @@ import { Solution } from './components/Solution';
 import { Benefits } from './components/Benefits';
 import { Instructor } from './components/Instructor';
 import { Testimonials } from './components/Testimonials';
+import { Results } from './components/Results';
 import { Pricing } from './components/Pricing';
 import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
@@ -16,6 +17,7 @@ function App() {
       <Problem />
       <Solution />
       <Benefits />
+      <Results />
       <Testimonials />
       <Instructor />
       <Pricing />

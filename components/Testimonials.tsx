@@ -1,15 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { TESTIMONIALS } from '../constants';
-import { Quote } from 'lucide-react';
+import { Quote, Video } from 'lucide-react';
 
 export const Testimonials: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
+    // Carrossel Timer
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % TESTIMONIALS.length);
     }, 5000);
+
+    // Vturb Script Injection for Testimonial Video
+    const scriptId = 'vturb-testimonial-script';
+    if (!document.getElementById(scriptId)) {
+      const s = document.createElement("script");
+      s.id = scriptId;
+      s.src = "https://scripts.converteai.net/ceaefeeb-feef-4b52-8911-9ec9de0d5b6b/players/6995c6d1958dc46586de010a/v4/player.js";
+      s.async = true;
+      document.head.appendChild(s);
+    }
+
     return () => clearInterval(timer);
   }, []);
 
@@ -37,7 +49,7 @@ export const Testimonials: React.FC = () => {
         </div>
 
         {/* Carousel */}
-        <div className="relative h-80 sm:h-64 mt-16">
+        <div className="relative h-80 sm:h-64 mt-16 mb-8">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
@@ -67,7 +79,7 @@ export const Testimonials: React.FC = () => {
           </AnimatePresence>
         </div>
 
-        <div className="flex justify-center gap-2 mt-8">
+        <div className="flex justify-center gap-2 mb-16">
           {TESTIMONIALS.map((_, idx) => (
             <button
               key={idx}
@@ -77,6 +89,26 @@ export const Testimonials: React.FC = () => {
               }`}
             />
           ))}
+        </div>
+
+        {/* Video Testimonial */}
+        <div className="border-t border-purple-100 pt-16">
+          <div className="text-center mb-8">
+             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-100 text-rose-700 font-semibold mb-4 text-sm uppercase tracking-wide">
+                <Video className="w-4 h-4" />
+                <span>Assista</span>
+             </div>
+             <h3 className="text-2xl md:text-3xl font-serif font-bold text-gray-900">
+                Depoimentos Reais em Vídeo
+             </h3>
+          </div>
+
+          {/* Wrapper simples sem motion para evitar conflitos de carregamento do player */}
+          <div className="w-full max-w-[400px] mx-auto shadow-2xl rounded-2xl overflow-hidden border-4 border-white bg-black">
+             <div dangerouslySetInnerHTML={{ __html: `
+               <vturb-smartplayer id="vid-6995c6d1958dc46586de010a" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
+             ` }} />
+          </div>
         </div>
         
       </div>
