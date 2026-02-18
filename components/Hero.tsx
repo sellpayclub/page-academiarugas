@@ -9,7 +9,7 @@ export const Hero: React.FC = () => {
     // Monta a URL com os parâmetros de tracking corretos
     const search = window.location.search || '?';
     const href = encodeURIComponent(window.location.href);
-    setVideoSrc(`https://scripts.converteai.net/ceaefeeb-feef-4b52-8911-9ec9de0d5b6b/players/6995c6a0f67feccb22a2b122/v4/embed.html${search}&vl=${href}`);
+    setVideoSrc(`https://scripts.converteai.net/ceaefeeb-feef-4b52-8911-9ec9de0d5b6b/players/69960871dcfb6904915b507b/v4/embed.html${search}&vl=${href}`);
   }, []);
 
   return (
@@ -46,13 +46,13 @@ export const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="w-full max-w-[400px] mx-auto shadow-2xl rounded-2xl overflow-hidden border-4 border-white bg-black mt-8"
         >
-           <div id="ifr_6995c6a0f67feccb22a2b122_wrapper" style={{ margin: '0 auto', width: '100%', maxWidth: '400px' }}>
-              <div style={{ position: 'relative', padding: '100% 0 0 0' }} id="ifr_6995c6a0f67feccb22a2b122_aspect">
+           <div id="ifr_69960871dcfb6904915b507b_wrapper" style={{ margin: '0 auto', width: '100%', maxWidth: '400px' }}>
+              <div style={{ position: 'relative', padding: '100% 0 0 0' }} id="ifr_69960871dcfb6904915b507b_aspect">
                 <iframe 
                   frameBorder="0" 
                   allowFullScreen 
                   src={videoSrc}
-                  id="ifr_6995c6a0f67feccb22a2b122" 
+                  id="ifr_69960871dcfb6904915b507b" 
                   style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
                   referrerPolicy="origin"
                 ></iframe>
