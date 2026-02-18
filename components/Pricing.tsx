@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { PLANS } from '../constants';
-import { Check, Users, Video, RefreshCw, Star } from 'lucide-react';
+import { Check, Users, Video, RefreshCw, Star, Smartphone } from 'lucide-react';
 
 export const Pricing: React.FC = () => {
   return (
@@ -63,15 +63,26 @@ export const Pricing: React.FC = () => {
               )}
               
               <div className="p-8 flex-grow flex flex-col">
-                <div className="text-center mb-6">
+                <div className="text-center mb-4">
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">{plan.title}</h3>
                     <div className="flex items-center justify-center gap-1 mb-2">
-                    <span className="text-4xl font-extrabold text-purple-700">{plan.price}</span>
+                      <span className="text-4xl font-extrabold text-purple-700">{plan.price}</span>
                     </div>
                     {plan.description && (
                          <p className="text-sm text-gray-500 italic mt-2 min-h-[3rem]">{plan.description}</p>
                     )}
                 </div>
+
+                {/* Highlight App for Complete Plan (assuming index 0) */}
+                {index === 0 && (
+                    <div className="bg-purple-50 border border-purple-100 rounded-xl p-4 mb-6 text-center">
+                        <div className="flex justify-center mb-2">
+                             <Smartphone className="w-6 h-6 text-purple-600" />
+                        </div>
+                        <p className="text-sm font-bold text-purple-900">INCLUSO: APLICATIVO FACIAL IA</p>
+                        <p className="text-xs text-purple-600 mt-1">Análise e protocolo personalizado</p>
+                    </div>
+                )}
 
                 <div className="mb-8 flex-grow">
                      <p className="font-bold text-gray-900 mb-4 text-center">Você recebe:</p>

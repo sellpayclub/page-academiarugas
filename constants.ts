@@ -35,6 +35,7 @@ export const PLANS: Plan[] = [
     title: "PLANO COMPLETO",
     price: "R$ 29,90",
     features: [
+      "🔥 APP COM IA: Análise facial e treino personalizado",
       "6 meses de exercícios faciais progressivos",
       "Apenas R$4,90 por mês",
       "Dicas exclusivas",
