@@ -10,7 +10,7 @@ import { Pricing } from './components/Pricing';
 import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
 import { Guarantee } from './components/Guarantee';
-import { AppFeature } from './components/AppFeature';
+
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       <Hero />
       <Problem />
       <Solution />
-      <AppFeature />
+
       <Benefits />
       <Results />
       <Testimonials />
