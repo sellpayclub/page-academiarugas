@@ -29,14 +29,22 @@ export const Hero: React.FC = () => {
           <span className="text-sm font-extrabold tracking-wider text-gray-900 uppercase font-sans">ACADEMIA ANTI-RUGAS</span>
         </motion.div>
 
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="text-lg md:text-xl font-bold text-rose-600 uppercase tracking-wide max-w-2xl mx-auto"
+        >
+          Não adianta usar cremes se os músculos do seu rosto estão caídos e flácidos!
+        </motion.p>
+
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight font-sans tracking-tight"
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-gray-900 leading-snug font-sans tracking-tight max-w-3xl mx-auto"
         >
-          <span className="text-rose-600 block mb-3">Não adianta usar cremes se os músculos do seu rosto estão caídos e flácidos!</span>
-          <span className="block">Descubra como treinar os 57 músculos do seu rosto para parecer 10 anos mais jovem</span>
+          Descubra como treinar os <span className="text-purple-700">57 músculos do seu rosto</span> para parecer <span className="underline decoration-rose-400 decoration-4 underline-offset-4">10 anos mais jovem</span>
         </motion.h1>
 
         {/* Video Iframe Implementation */}
