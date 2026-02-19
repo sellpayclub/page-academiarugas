@@ -35,8 +35,8 @@ export const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight font-sans tracking-tight"
         >
-          <span className="text-rose-600 block mb-3">❌ Suas rugas não são falta de creme…</span>
-          <span className="block">👉 São músculos faciais fracos!</span>
+          <span className="text-rose-600 block mb-3">Não adianta usar cremes se os músculos do seu rosto estão caídos e flácidos!</span>
+          <span className="block">Descubra como treinar os 57 músculos do seu rosto para parecer 10 anos mais jovem</span>
         </motion.h1>
 
         {/* Video Iframe Implementation */}
