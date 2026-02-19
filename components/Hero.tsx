@@ -18,8 +18,8 @@ export const Hero: React.FC = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-50 via-white to-white opacity-70"></div>
 
       <div className="relative z-10 max-w-4xl w-full text-center space-y-8">
-        
-        <motion.div 
+
+        <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -29,7 +29,7 @@ export const Hero: React.FC = () => {
           <span className="text-sm font-extrabold tracking-wider text-gray-900 uppercase font-sans">ACADEMIA ANTI-RUGAS</span>
         </motion.div>
 
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -40,34 +40,27 @@ export const Hero: React.FC = () => {
         </motion.h1>
 
         {/* Video Iframe Implementation */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           className="w-full max-w-[400px] mx-auto shadow-2xl rounded-2xl overflow-hidden border-4 border-white bg-black mt-8"
         >
-           <div id="ifr_69960871dcfb6904915b507b_wrapper" style={{ margin: '0 auto', width: '100%', maxWidth: '400px' }}>
-              <div style={{ position: 'relative', padding: '100% 0 0 0' }} id="ifr_69960871dcfb6904915b507b_aspect">
-                <iframe 
-                  frameBorder="0" 
-                  allowFullScreen 
-                  src={videoSrc}
-                  id="ifr_69960871dcfb6904915b507b" 
-                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
-                  referrerPolicy="origin"
-                ></iframe>
-              </div>
-           </div>
+          <div id="ifr_69960871dcfb6904915b507b_wrapper" style={{ margin: '0 auto', width: '100%', maxWidth: '400px' }}>
+            <div style={{ position: 'relative', padding: '100% 0 0 0' }} id="ifr_69960871dcfb6904915b507b_aspect">
+              <iframe
+                frameBorder="0"
+                allowFullScreen
+                src={videoSrc}
+                id="ifr_69960871dcfb6904915b507b"
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                referrerPolicy="origin"
+              ></iframe>
+            </div>
+          </div>
         </motion.div>
 
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="max-w-2xl mx-auto text-lg md:text-xl text-gray-700 leading-relaxed font-medium mt-8"
-        >
-          Participe da primeira Academia anti-rugas do Brasil e descubra o método simples de exercícios faciais que fortalece, levanta e redefine seu rosto naturalmente.
-        </motion.div>
+
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -75,10 +68,10 @@ export const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="pt-4"
         >
-           <a href="#pricing" className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl hover:shadow-green-500/20 transition-all transform hover:-translate-y-1">
-             QUERO MEU ROSTO MAIS FIRME
-             <ArrowRight className="w-5 h-5" />
-           </a>
+          <a href="#pricing" className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl hover:shadow-green-500/20 transition-all transform hover:-translate-y-1">
+            QUERO MEU ROSTO MAIS FIRME
+            <ArrowRight className="w-5 h-5" />
+          </a>
         </motion.div>
       </div>
     </section>
