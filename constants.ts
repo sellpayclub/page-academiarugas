@@ -37,7 +37,6 @@ export const PLANS: Plan[] = [
     features: [
       "🔥 APP COM IA: Análise facial e treino personalizado",
       "6 meses de exercícios faciais progressivos",
-
       "Dicas exclusivas",
       "Grupo fechado de alunas",
       "Aulas ao vivo com a Michele",
