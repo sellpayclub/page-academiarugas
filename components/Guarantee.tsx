@@ -27,7 +27,7 @@ export const Guarantee: React.FC = () => {
             </h3>
             
             <p className="text-lg text-gray-700 mb-6 max-w-2xl leading-relaxed">
-              Teste a <span className="font-bold text-purple-700">ACADEMIA ANTI-RUGAS</span> por 90 dias. 
+              Teste o <span className="font-bold text-purple-700">YOGA FACIAL!</span> por 90 dias. 
               Se você não gostar, se achar que não é pra você, ou se não sentir que valeu a pena… 
               <br className="hidden md:block" /> <span className="font-bold">Basta cancelar.</span>
             </p>

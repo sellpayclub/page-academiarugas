@@ -34,7 +34,7 @@ export const Solution: React.FC = () => {
           >
             Foi por isso que criamos a…<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-300 to-purple-200">
-              💪 ACADEMIA ANTI-RUGAS
+              🧘‍♀️ YOGA FACIAL!
             </span>
           </motion.h2>
           <motion.p 
@@ -83,7 +83,7 @@ export const Solution: React.FC = () => {
           >
             <div className="bg-purple-800/50 p-6 rounded-xl border-l-4 border-rose-400">
               <p className="text-xl font-medium italic">
-                "É literalmente uma academia… só que para o seu rosto."
+                "É literalmente yoga… só que para o seu rosto."
               </p>
             </div>
             <div className="space-y-2 text-purple-200">
