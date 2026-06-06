@@ -4,10 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yoga Facial! | Michele Negrini</title>
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- SmartPlayer SDK -->
+    <script src="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/sdk.js" async></script>
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="/styles.css">
+    
     <script>
       tailwind.config = {
         theme: {
@@ -42,32 +56,7 @@
         },
       }
     </script>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        font-family: 'Inter', sans-serif;
-        color: #1f2937; /* Gray-800 default for better readability */
-      }
-      h1, h2, h3, h4, h5, h6 {
-        font-weight: 700;
-      }
-      /* Hide scrollbar for clean look in some browsers */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #d8b4fe;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #a855f7;
-      }
-    </style>
+    
     <script>
       window.pixelId = "6990e90ce48640d440fdb986";
       var a = document.createElement("script");
@@ -76,24 +65,781 @@
       a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
       document.head.appendChild(a);
     </script>
-    <!-- SmartPlayer SDK -->
-    <script src="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/sdk.js" async></script>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/client": "https://esm.sh/react-dom@^19.2.4/client",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "framer-motion": "https://esm.sh/framer-motion@^12.34.2",
-    "lucide-react": "https://esm.sh/lucide-react@^0.574.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+  </head>
+  <body class="w-full overflow-x-hidden bg-white">
+
+    <!-- HERO SECTION -->
+    <section class="relative w-full min-h-screen bg-white overflow-hidden flex flex-col items-center justify-center pt-8 pb-12 px-4 sm:px-6 lg:px-8">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-50 via-white to-white opacity-70"></div>
+
+      <div class="relative z-10 max-w-4xl w-full text-center space-y-8">
+        <div class="inline-flex items-center gap-2 mb-2 reveal">
+          <span class="text-2xl">💆‍♀️</span>
+          <span class="text-sm font-extrabold tracking-wider text-gray-900 uppercase font-sans">YOGA FACIAL!</span>
+        </div>
+
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight font-sans tracking-tight reveal reveal-delay-1">
+          <span class="text-rose-600 block mb-3">❌ Suas rugas não são falta de creme…</span>
+          <span class="block">👉 São músculos faciais fracos!</span>
+        </h1>
+
+        <!-- Video Player -->
+        <div class="w-full max-w-[400px] mx-auto shadow-2xl rounded-2xl overflow-hidden border-4 border-white bg-black mt-8 reveal reveal-delay-2">
+          <div id="ifr_69960871dcfb6904915b507b_wrapper" style="margin: 0 auto; width: 100%; max-width: 400px;">
+            <div style="position: relative; padding: 100% 0 0 0;" id="ifr_69960871dcfb6904915b507b_aspect">
+              <iframe frameborder="0" allowfullscreen src="about:blank" id="ifr_69960871dcfb6904915b507b" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" referrerpolicy="origin" onload="this.onload=null, this.src='https://scripts.converteai.net/ceaefeeb-feef-4b52-8911-9ec9de0d5b6b/players/69960871dcfb6904915b507b/v4/embed.html' +(location.search||'?') +'&vl=' +encodeURIComponent(location.href)"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <p class="max-w-2xl mx-auto text-lg md:text-xl text-gray-700 leading-relaxed font-medium mt-8 reveal reveal-delay-3">
+          Participe do melhor método de Yoga Facial do Brasil e descubra o método simples de exercícios faciais que fortalece, levanta e redefine seu rosto naturalmente.
+        </p>
+
+        <div class="pt-4 reveal reveal-delay-3">
+          <a href="#pricing" class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl hover:shadow-green-500/20 transition-all transform hover:-translate-y-1">
+            QUERO MEU ROSTO MAIS FIRME
+            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM SECTION -->
+    <section class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          
+          <div class="space-y-6 reveal">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900">
+              Você já comprou:
+            </h2>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3 text-lg text-gray-600">
+                <i data-lucide="x-circle" class="w-6 h-6 text-red-500 flex-shrink-0"></i>
+                Cremes anti-idade
+              </li>
+              <li class="flex items-center gap-3 text-lg text-gray-600">
+                <i data-lucide="x-circle" class="w-6 h-6 text-red-500 flex-shrink-0"></i>
+                Séruns caros
+              </li>
+              <li class="flex items-center gap-3 text-lg text-gray-600">
+                <i data-lucide="x-circle" class="w-6 h-6 text-red-500 flex-shrink-0"></i>
+                Tratamentos estéticos
+              </li>
+              <li class="flex items-center gap-3 text-lg text-gray-600">
+                <i data-lucide="x-circle" class="w-6 h-6 text-red-500 flex-shrink-0"></i>
+                Máscaras milagrosas
+              </li>
+              <li class="flex items-center gap-3 text-lg text-gray-600">
+                <i data-lucide="x-circle" class="w-6 h-6 text-red-500 flex-shrink-0"></i>
+                Aparelhos faciais
+              </li>
+            </ul>
+            
+            <div class="p-6 bg-red-50 border border-red-100 rounded-xl mt-8">
+              <h3 class="text-xl font-bold text-red-800 mb-2 flex items-center gap-2">
+                <i data-lucide="alert-triangle" class="w-5 h-5 text-red-600"></i>
+                E mesmo assim...
+              </h3>
+              <p class="text-gray-700">
+                As rugas continuam ali. A flacidez aumenta. O rosto parece mais “caído” a cada ano.
+              </p>
+            </div>
+          </div>
+
+          <div class="reveal reveal-delay-2 relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-rose-500 rounded-2xl transform rotate-3 opacity-20"></div>
+            <div class="bg-gray-50 p-8 rounded-2xl shadow-xl relative border border-gray-100">
+              <h3 class="text-2xl font-serif font-bold text-gray-900 mb-4">
+                Sabe por quê?
+              </h3>
+              <p class="text-lg text-gray-600 mb-6">
+                Porque te ensinaram a tratar a pele, quando o verdadeiro problema está embaixo dela.
+              </p>
+              
+              <div class="space-y-4">
+                <div class="flex items-start gap-4">
+                  <span class="text-2xl">👉</span>
+                  <div>
+                    <h4 class="font-bold text-gray-900">O problema NÃO é superficial.</h4>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <span class="text-2xl">👉</span>
+                  <div>
+                    <h4 class="font-bold text-gray-900">O problema está nos MÚSCULOS FACIAIS enfraquecidos.</h4>
+                    <p class="text-gray-600 mt-1">
+                      Assim como o corpo fica flácido quando você não treina, o rosto também perde sustentação quando os músculos não são estimulados.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 text-center font-bold text-purple-700 bg-purple-50 py-3 rounded-lg">
+                Nenhum creme consegue fortalecer músculo. <br/>
+                <span class="font-normal text-gray-600">É por isso que você não vê resultado real.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTION SECTION -->
+    <section class="py-20 bg-purple-900 text-white overflow-hidden relative">
+      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16 reveal">
+          <p class="text-purple-300 font-semibold tracking-wider uppercase mb-2">
+            A Solução Definitiva
+          </p>
+          <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">
+            Foi por isso que criamos a…<br />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-300 to-purple-200">
+              🧘‍♀️ YOGA FACIAL!
+            </span>
+          </h2>
+          <p class="text-lg text-purple-100 max-w-2xl mx-auto">
+            Um método estruturado de exercícios faciais protocolados, onde a Michele cria uma rotina específica para fortalecer, tonificar e levantar os músculos do seu rosto.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 reveal">
+            <h3 class="text-2xl font-bold mb-6 text-center">Funciona assim:</h3>
+            <ul class="space-y-6">
+              <li class="flex items-center gap-4 text-lg">
+                <div class="bg-rose-500 p-2 rounded-full text-white shadow-lg">
+                  <i data-lucide="dumbbell" class="w-6 h-6"></i>
+                </div>
+                <span>Você fortalece os músculos faciais</span>
+              </li>
+              <li class="flex items-center gap-4 text-lg">
+                <div class="bg-rose-500 p-2 rounded-full text-white shadow-lg">
+                  <i data-lucide="check-circle-2" class="w-6 h-6"></i>
+                </div>
+                <span>Os músculos sustentam melhor a pele</span>
+              </li>
+              <li class="flex items-center gap-4 text-lg">
+                <div class="bg-rose-500 p-2 rounded-full text-white shadow-lg">
+                  <i data-lucide="sparkles" class="w-6 h-6"></i>
+                </div>
+                <span>A pele fica mais firme e esticada</span>
+              </li>
+              <li class="flex items-center gap-4 text-lg">
+                <div class="bg-rose-500 p-2 rounded-full text-white shadow-lg">
+                  <i data-lucide="smile" class="w-6 h-6"></i>
+                </div>
+                <span>As rugas suavizam naturalmente</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-6 text-center md:text-left reveal reveal-delay-2">
+            <div class="bg-purple-800/50 p-6 rounded-xl border-l-4 border-rose-400">
+              <p class="text-xl font-medium italic">
+                "É literalmente yoga… só que para o seu rosto."
+              </p>
+            </div>
+            <div class="space-y-2 text-purple-200">
+              <p class="flex items-center justify-center md:justify-start gap-2">
+                <span class="w-1.5 h-1.5 bg-rose-400 rounded-full"></span> Sem agulhas.
+              </p>
+              <p class="flex items-center justify-center md:justify-start gap-2">
+                <span class="w-1.5 h-1.5 bg-rose-400 rounded-full"></span> Sem procedimentos invasivos.
+              </p>
+              <p class="flex items-center justify-center md:justify-start gap-2">
+                <span class="w-1.5 h-1.5 bg-rose-400 rounded-full"></span> Sem depender de produtos caros.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section class="py-20 bg-gradient-to-b from-white to-purple-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Who is it for -->
+        <div class="mb-20">
+          <div class="text-center mb-10 reveal">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">
+              O YOGA FACIAL! é para você que:
+            </h2>
+          </div>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-md border border-purple-100 flex items-start gap-3 hover:shadow-lg transition-shadow reveal">
+              <div class="bg-purple-100 p-1.5 rounded-full mt-1">
+                <i data-lucide="check" class="w-4 h-4 text-purple-600"></i>
+              </div>
+              <p class="text-gray-700 font-medium">Está incomodada com rugas e flacidez</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border border-purple-100 flex items-start gap-3 hover:shadow-lg transition-shadow reveal reveal-delay-1">
+              <div class="bg-purple-100 p-1.5 rounded-full mt-1">
+                <i data-lucide="check" class="w-4 h-4 text-purple-600"></i>
+              </div>
+              <p class="text-gray-700 font-medium">Sente que o rosto está 'derretendo'</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border border-purple-100 flex items-start gap-3 hover:shadow-lg transition-shadow reveal reveal-delay-2">
+              <div class="bg-purple-100 p-1.5 rounded-full mt-1">
+                <i data-lucide="check" class="w-4 h-4 text-purple-600"></i>
+              </div>
+              <p class="text-gray-700 font-medium">Não quer fazer botox ou procedimentos invasivos</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border border-purple-100 flex items-start gap-3 hover:shadow-lg transition-shadow reveal">
+              <div class="bg-purple-100 p-1.5 rounded-full mt-1">
+                <i data-lucide="check" class="w-4 h-4 text-purple-600"></i>
+              </div>
+              <p class="text-gray-700 font-medium">Já gastou com cosméticos e não viu resultado</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border border-purple-100 flex items-start gap-3 hover:shadow-lg transition-shadow reveal reveal-delay-1">
+              <div class="bg-purple-100 p-1.5 rounded-full mt-1">
+                <i data-lucide="check" class="w-4 h-4 text-purple-600"></i>
+              </div>
+              <p class="text-gray-700 font-medium">Quer uma solução natural e acessível</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border border-purple-100 flex items-start gap-3 hover:shadow-lg transition-shadow reveal reveal-delay-2">
+              <div class="bg-purple-100 p-1.5 rounded-full mt-1">
+                <i data-lucide="check" class="w-4 h-4 text-purple-600"></i>
+              </div>
+              <p class="text-gray-700 font-medium">Quer recuperar firmeza, definição e autoestima</p>
+            </div>
+          </div>
+          
+          <div class="mt-10 text-center reveal">
+            <p class="text-lg font-semibold text-purple-700">
+              Se você quer um método natural e inteligente, isso é pra você.
+            </p>
+          </div>
+        </div>
+
+        <!-- Imagine Section -->
+        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden border border-gray-100 reveal">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-rose-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
+          <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 class="text-3xl font-serif font-bold text-gray-900 mb-6 flex items-center gap-2">
+                <i data-lucide="star" class="w-8 h-8 text-yellow-500 fill-current"></i>
+                Imagine:
+              </h3>
+              <ul class="space-y-4">
+                <li class="flex items-center gap-3 text-lg text-gray-700">
+                  <span class="text-rose-500">✨</span> Olhar no espelho e ver um rosto mais firme
+                </li>
+                <li class="flex items-center gap-3 text-lg text-gray-700">
+                  <span class="text-rose-500">✨</span> Linha do maxilar mais definida
+                </li>
+                <li class="flex items-center gap-3 text-lg text-gray-700">
+                  <span class="text-rose-500">✨</span> Bochechas mais levantadas
+                </li>
+                <li class="flex items-center gap-3 text-lg text-gray-700">
+                  <span class="text-rose-500">✨</span> Rugas suavizadas
+                </li>
+                <li class="flex items-center gap-3 text-lg text-gray-700">
+                  <span class="text-rose-500">✨</span> Maquiagem assentando melhor
+                </li>
+                <li class="flex items-center gap-3 text-lg text-gray-700">
+                  <span class="text-rose-500">✨</span> Autoestima renovada
+                </li>
+              </ul>
+            </div>
+            <div class="bg-purple-50 p-8 rounded-2xl border border-purple-100 text-center">
+              <p class="text-xl text-gray-800 leading-relaxed mb-4">
+                Você não vai apenas melhorar sua aparência…
+              </p>
+              <p class="text-2xl font-bold text-purple-800 mb-6 font-serif">
+                Você vai recuperar a sensação de juventude, segurança e confiança.
+              </p>
+              <p class="text-gray-600">
+                E o melhor: sabendo que conquistou isso naturalmente.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESULTS SECTION -->
+    <section class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 reveal">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-50 text-purple-700 font-semibold mb-4">
+            <i data-lucide="camera" class="w-5 h-5"></i>
+            <span class="text-sm uppercase tracking-wide">Resultados Reais</span>
+          </div>
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">
+            Transformações que inspiram
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Veja o que acontece quando você exercita os músculos do seu rosto com constância e o método certo.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-start">
+          <div class="group relative rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-gray-50 reveal">
+            <img src="https://ekfkrwueqwpqakpsrsjt.supabase.co/storage/v1/object/public/imagens%20daniel/1colher-resultado.webp" alt="Resultado Aluna 1" class="w-full h-auto block" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+              <span class="text-white font-medium bg-white/20 backdrop-blur-md px-4 py-1 rounded-full text-sm">Resultado Aluna</span>
+            </div>
+          </div>
+          <div class="group relative rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-gray-50 reveal reveal-delay-1">
+            <img src="https://ekfkrwueqwpqakpsrsjt.supabase.co/storage/v1/object/public/imagens%20daniel/2colher-resultado.webp" alt="Resultado Aluna 2" class="w-full h-auto block" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+              <span class="text-white font-medium bg-white/20 backdrop-blur-md px-4 py-1 rounded-full text-sm">Resultado Aluna</span>
+            </div>
+          </div>
+          <div class="group relative rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-gray-50 reveal reveal-delay-2">
+            <img src="https://ekfkrwueqwpqakpsrsjt.supabase.co/storage/v1/object/public/imagens%20daniel/3colher-resultado.webp" alt="Resultado Aluna 3" class="w-full h-auto block" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+              <span class="text-white font-medium bg-white/20 backdrop-blur-md px-4 py-1 rounded-full text-sm">Resultado Aluna</span>
+            </div>
+          </div>
+          <div class="group relative rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-gray-50 reveal reveal-delay-3">
+            <img src="https://ekfkrwueqwpqakpsrsjt.supabase.co/storage/v1/object/public/imagens%20daniel/4colher-resultado.webp" alt="Resultado Aluna 4" class="w-full h-auto block" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+              <span class="text-white font-medium bg-white/20 backdrop-blur-md px-4 py-1 rounded-full text-sm">Resultado Aluna</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10 reveal">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-100 text-rose-700 font-bold mb-4 text-sm uppercase tracking-wide shadow-sm">
+            <i data-lucide="video" class="w-4 h-4"></i>
+            <span>Depoimentos</span>
+          </div>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 font-sans">
+            O que dizem nossas alunas
+          </h2>
+          <p class="mt-4 text-gray-600 text-lg">
+            Resultados reais de quem já transformou o rosto com o método.
+          </p>
+        </div>
+
+        <!-- Video Testimonial Wrapper -->
+        <div class="relative w-full max-w-[500px] mx-auto reveal">
+          <div class="shadow-2xl rounded-2xl overflow-hidden border-4 border-white bg-black">
+            <div id="ifr_6995c6d1958dc46586de010a_wrapper" style="margin: 0 auto; width: 100%; max-width: 400px;">
+              <div style="position: relative; padding: 100% 0 0 0;" id="ifr_6995c6d1958dc46586de010a_aspect">
+                <iframe frameborder="0" allowfullscreen src="about:blank" id="ifr_6995c6d1958dc46586de010a" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" referrerpolicy="origin" onload="this.onload=null, this.src='https://scripts.converteai.net/ceaefeeb-feef-4b52-8911-9ec9de0d5b6b/players/6995c6d1958dc46586de010a/v4/embed.html' +(location.search||'?') +'&vl=' +encodeURIComponent(location.href)"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Written Testimonial Cards -->
+        <div class="mt-16 grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 reveal">
+            <div class="flex items-center gap-3 mb-4">
+              <img src="https://picsum.photos/100/100?random=1" alt="Ana Souza" class="w-12 h-12 rounded-full object-cover border border-purple-100" />
+              <div>
+                <h4 class="font-bold text-gray-900">Ana Souza</h4>
+                <div class="flex text-yellow-400"><span class="text-xs">★★★★★</span></div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">"Rosto mais firme em poucas semanas e melhora visível na flacidez."</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 reveal reveal-delay-1">
+            <div class="flex items-center gap-3 mb-4">
+              <img src="https://picsum.photos/100/100?random=2" alt="Carla Dias" class="w-12 h-12 rounded-full object-cover border border-purple-100" />
+              <div>
+                <h4 class="font-bold text-gray-900">Carla Dias</h4>
+                <div class="flex text-yellow-400"><span class="text-xs">★★★★★</span></div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">"Sinto a pele mais esticada e redução da aparência das linhas de expressão."</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 reveal reveal-delay-2">
+            <div class="flex items-center gap-3 mb-4">
+              <img src="https://picsum.photos/100/100?random=3" alt="Mariana Costa" class="w-12 h-12 rounded-full object-cover border border-purple-100" />
+              <div>
+                <h4 class="font-bold text-gray-900">Mariana Costa</h4>
+                <div class="flex text-yellow-400"><span class="text-xs">★★★★★</span></div>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">"Minha autoestima está renovada, maquiagem assenta melhor!"</p>
+          </div>
+        </div>
+        
+        <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 text-center reveal">
+          <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+            <p class="font-bold text-gray-900 text-lg">Rosto</p>
+            <p class="text-sm text-gray-500">Mais firme</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+            <p class="font-bold text-gray-900 text-lg">Papada</p>
+            <p class="text-sm text-gray-500">Reduzida</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+            <p class="font-bold text-gray-900 text-lg">Olhar</p>
+            <p class="text-sm text-gray-500">Levantado</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+            <p class="font-bold text-gray-900 text-lg">Pele</p>
+            <p class="text-sm text-gray-500">Radiante</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing" class="py-24 bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 relative">
+      <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+      
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Community/Bonus Section -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/20 mb-16 text-white text-center reveal">
+          <h3 class="text-2xl md:text-3xl font-serif font-bold mb-8">
+            Além disso, no plano completo você participa de:
+          </h3>
+          
+          <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <div class="flex flex-col items-center p-4 bg-white/5 rounded-xl border border-white/10">
+              <div class="bg-rose-500 p-4 rounded-full mb-4 shadow-lg shadow-rose-500/30">
+                <i data-lucide="users" class="w-8 h-8 text-white"></i>
+              </div>
+              <h4 class="font-bold text-xl mb-2">Grupo exclusivo de alunas</h4>
+              <p class="text-purple-200 text-sm">Você não estará sozinha.</p>
+            </div>
+            <div class="flex flex-col items-center p-4 bg-white/5 rounded-xl border border-white/10">
+              <div class="bg-rose-500 p-4 rounded-full mb-4 shadow-lg shadow-rose-500/30">
+                <i data-lucide="video" class="w-8 h-8 text-white"></i>
+              </div>
+              <h4 class="font-bold text-xl mb-2">Aulas ao vivo com a Michele</h4>
+              <p class="text-purple-200 text-sm">Tire suas dúvidas.</p>
+            </div>
+            <div class="flex flex-col items-center p-4 bg-white/5 rounded-xl border border-white/10">
+              <div class="bg-rose-500 p-4 rounded-full mb-4 shadow-lg shadow-rose-500/30">
+                <i data-lucide="refresh-cw" class="w-8 h-8 text-white"></i>
+              </div>
+              <h4 class="font-bold text-xl mb-2">Atualizações constantes</h4>
+              <p class="text-purple-200 text-sm">Dos protocolos de exercícios.</p>
+            </div>
+          </div>
+          
+          <p class="text-lg font-medium text-purple-100 italic">
+            "Existe uma comunidade inteira evoluindo junto com você."
+          </p>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto items-start">
+          
+          <!-- Plano Completo -->
+          <div class="relative bg-white rounded-3xl overflow-hidden border-4 border-rose-400 shadow-[0_0_40px_rgba(251,113,133,0.4)] scale-105 z-10 w-full flex flex-col h-full reveal">
+            <div class="bg-rose-500 text-white text-center py-2 font-bold text-sm tracking-widest uppercase">
+              MELHOR CUSTO-BENEFÍCIO
+            </div>
+            
+            <div class="p-8 flex-grow flex flex-col justify-between">
+              <div>
+                <div class="text-center mb-4">
+                  <h3 class="text-2xl font-bold text-gray-900 mb-4">PLANO COMPLETO</h3>
+                  <div class="flex items-center justify-center gap-1 mb-2">
+                    <span class="text-4xl font-extrabold text-purple-700">R$ 29,90</span>
+                  </div>
+                  <p class="text-sm text-gray-500 italic mt-2 min-h-[3rem]">
+                    Por menos do que o valor de um único creme anti-idade. Você paga uma vez… e pode transformar seu rosto pelos próximos meses.
+                  </p>
+                </div>
+
+                <div class="mb-8">
+                  <p class="font-bold text-gray-900 mb-4 text-center">Você recebe:</p>
+                  <ul class="space-y-3">
+                    <li class="flex items-start gap-3 text-gray-700 text-xs sm:text-sm">
+                      <div class="mt-0.5 bg-green-100 p-0.5 rounded-full flex-shrink-0">
+                        <i data-lucide="check" class="w-3 h-3 text-green-600"></i>
+                      </div>
+                      <span class="leading-tight">6 meses de exercícios faciais progressivos</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-gray-700 text-xs sm:text-sm">
+                      <div class="mt-0.5 bg-green-100 p-0.5 rounded-full flex-shrink-0">
+                        <i data-lucide="check" class="w-3 h-3 text-green-600"></i>
+                      </div>
+                      <span class="leading-tight">Apenas R$4,90 por mês</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-gray-700 text-xs sm:text-sm">
+                      <div class="mt-0.5 bg-green-100 p-0.5 rounded-full flex-shrink-0">
+                        <i data-lucide="check" class="w-3 h-3 text-green-600"></i>
+                      </div>
+                      <span class="leading-tight">Dicas exclusivas</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-gray-700 text-xs sm:text-sm">
+                      <div class="mt-0.5 bg-green-100 p-0.5 rounded-full flex-shrink-0">
+                        <i data-lucide="check" class="w-3 h-3 text-green-600"></i>
+                      </div>
+                      <span class="leading-tight">Grupo fechado de alunas</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-gray-700 text-xs sm:text-sm">
+                      <div class="mt-0.5 bg-green-100 p-0.5 rounded-full flex-shrink-0">
+                        <i data-lucide="check" class="w-3 h-3 text-green-600"></i>
+                      </div>
+                      <span class="leading-tight">Aulas ao vivo com a Michele</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-gray-700 text-xs sm:text-sm">
+                      <div class="mt-0.5 bg-green-100 p-0.5 rounded-full flex-shrink-0">
+                        <i data-lucide="check" class="w-3 h-3 text-green-600"></i>
+                      </div>
+                      <span class="leading-tight">Suporte</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-gray-700 text-xs sm:text-sm">
+                      <div class="mt-0.5 bg-green-100 p-0.5 rounded-full flex-shrink-0">
+                        <i data-lucide="check" class="w-3 h-3 text-green-600"></i>
+                      </div>
+                      <span class="leading-tight">Atualizações constantes dos exercícios</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- PURCHASE BUTTON 1 -->
+              <a href="{{LINK_COMPRA}}" class="block w-full text-center py-4 rounded-xl font-bold text-lg transition-all transform hover:-translate-y-1 shadow-lg uppercase bg-green-500 hover:bg-green-600 text-white hover:shadow-green-500/30">
+                QUERO O COMPLETO
+              </a>
+            </div>
+          </div>
+
+          <!-- Plano Básico -->
+          <div class="relative bg-white rounded-3xl overflow-hidden border border-gray-200 shadow-xl w-full flex flex-col h-full reveal reveal-delay-2">
+            <div class="p-8 flex-grow flex flex-col justify-between h-full">
+              <div>
+                <div class="text-center mb-4">
+                  <h3 class="text-2xl font-bold text-gray-900 mb-4">PLANO BÁSICO</h3>
+                  <div class="flex items-center justify-center gap-1 mb-2">
+                    <span class="text-4xl font-extrabold text-purple-700">R$ 9,90</span>
+                  </div>
+                  <p class="text-sm text-gray-500 italic mt-2 min-h-[3rem]">
+                    Perfeito para quem quer começar agora.
+                  </p>
+                </div>
+
+                <div class="mb-8">
+                  <p class="font-bold text-gray-900 mb-4 text-center">Você recebe:</p>
+                  <ul class="space-y-3">
+                    <li class="flex items-start gap-3 text-gray-700 text-xs sm:text-sm">
+                      <div class="mt-0.5 bg-green-100 p-0.5 rounded-full flex-shrink-0">
+                        <i data-lucide="check" class="w-3 h-3 text-green-600"></i>
+                      </div>
+                      <span class="leading-tight">Rotina completa de 30 dias de exercícios faciais protocolados</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- PURCHASE BUTTON 2 -->
+              <a href="{{LINK_COMPRA}}" class="block w-full text-center py-4 rounded-xl font-bold text-lg transition-all transform hover:-translate-y-1 shadow-lg uppercase bg-purple-100 hover:bg-purple-200 text-purple-900">
+                QUERO O BÁSICO
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- GUARANTEE SECTION -->
+    <section class="py-16 bg-white border-t border-gray-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-purple-50 border border-purple-100 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden shadow-sm reveal">
+          <div class="absolute top-0 right-0 -mr-8 -mt-8 text-purple-100 opacity-50">
+            <i data-lucide="shield-check" class="w-48 h-48"></i>
+          </div>
+
+          <div class="relative z-10 flex flex-col items-center">
+            <div class="bg-white p-3 rounded-full shadow-sm mb-6">
+              <i data-lucide="shield-check" class="w-10 h-10 text-purple-600"></i>
+            </div>
+            
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 font-sans">
+              GARANTIA INCONDICIONAL DE 90 DIAS
+            </h3>
+            
+            <p class="text-lg text-gray-700 mb-6 max-w-2xl leading-relaxed">
+              Teste o <span className="font-bold text-purple-700">YOGA FACIAL!</span> por 90 dias. 
+              Se você não gostar, se achar que não é pra você, ou se não sentir que valeu a pena… 
+              <br class="hidden md:block" /> <span class="font-bold">Basta cancelar.</span>
+            </p>
+            
+            <div class="inline-block bg-white px-6 py-2 rounded-full border border-purple-200">
+              <p class="text-sm font-bold text-purple-800 uppercase tracking-wide">
+                Sem burocracia • Sem risco • Reembolso total
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTRUCTOR SECTION -->
+    <section class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+          
+          <div class="w-full md:w-1/2 flex justify-center order-2 md:order-1 reveal">
+            <div class="relative group">
+              <div class="absolute inset-0 bg-purple-100 rounded-[2rem] transform rotate-6 transition-transform group-hover:rotate-3"></div>
+              <div class="absolute inset-0 bg-rose-100 rounded-[2rem] transform -rotate-6 transition-transform group-hover:-rotate-3"></div>
+              <img src="https://ekfkrwueqwpqakpsrsjt.supabase.co/storage/v1/object/public/imagens%20daniel/MICHELE.jpg" alt="Michele Negrini" class="relative z-10 w-full max-w-sm h-auto object-cover rounded-[2rem] shadow-xl" />
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/2 text-center md:text-left order-1 md:order-2 reveal reveal-delay-2">
+            <div class="inline-block bg-purple-50 px-4 py-1 rounded-full border border-purple-100 mb-4">
+              <span class="text-purple-700 font-bold tracking-wide text-xs uppercase font-sans">Sua Professora</span>
+            </div>
+            
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-sans tracking-tight">
+              Michele Negrini
+            </h2>
+            
+            <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+              <p>
+                Especialista em beleza natural e rejuvenescimento facial. Michele desenvolveu um método único que combina <strong>fisiologia muscular</strong> com estética, ajudando milhares de mulheres a recuperarem a autoestima sem intervenções cirúrgicas.
+              </p>
+              <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-purple-500 italic text-gray-600">
+                "Meu objetivo é te mostrar que a beleza natural é a mais poderosa que existe. Seu rosto tem um potencial incrível que só precisa do estímulo certo."
+              </div>
+            </div>
+            
+            <div class="mt-8 flex items-center justify-center md:justify-start gap-4">
+              <a href="https://www.instagram.com/michelenegrini" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-gray-600 font-semibold hover:text-purple-600 transition-colors">
+                <i data-lucide="instagram" class="w-6 h-6"></i>
+                <span>@michelenegrini</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-12 reveal">
+          <div class="flex justify-center mb-4">
+            <i data-lucide="help-circle" class="w-10 h-10 text-purple-600"></i>
+          </div>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 font-sans mb-4">Dúvidas Frequentes</h2>
+          <p class="text-gray-600 animate-pulse">
+            Tudo o que você precisa saber antes de começar.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          
+          <!-- Accordion 1 -->
+          <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:border-purple-200 transition-colors faq-toggle-container reveal">
+            <button type="button" class="w-full flex items-center justify-between p-5 text-left bg-white faq-toggle">
+              <span class="font-semibold text-gray-800 pr-4 text-lg">Em quanto tempo vejo resultados?</span>
+              <div class="p-1 rounded-full bg-gray-100 transition-colors">
+                <i data-lucide="chevron-down" class="w-5 h-5 text-gray-600 transition-transform duration-300 faq-icon"></i>
+              </div>
+            </button>
+            <div class="p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-50 faq-answer hidden">
+              Muitas alunas relatam mudanças nas primeiras semanas. Como qualquer fortalecimento muscular, os resultados são progressivos.
+            </div>
+          </div>
+
+          <!-- Accordion 2 -->
+          <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:border-purple-200 transition-colors faq-toggle-container reveal">
+            <button type="button" class="w-full flex items-center justify-between p-5 text-left bg-white faq-toggle">
+              <span class="font-semibold text-gray-800 pr-4 text-lg">Preciso usar algum produto junto?</span>
+              <div class="p-1 rounded-full bg-gray-100 transition-colors">
+                <i data-lucide="chevron-down" class="w-5 h-5 text-gray-600 transition-transform duration-300 faq-icon"></i>
+              </div>
+            </button>
+            <div class="p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-50 faq-answer hidden">
+              Não. O método atua na musculatura facial. Produtos são opcionais.
+            </div>
+          </div>
+
+          <!-- Accordion 3 -->
+          <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:border-purple-200 transition-colors faq-toggle-container reveal">
+            <button type="button" class="w-full flex items-center justify-between p-5 text-left bg-white faq-toggle">
+              <span class="font-semibold text-gray-800 pr-4 text-lg">Quanto tempo por dia preciso?</span>
+              <div class="p-1 rounded-full bg-gray-100 transition-colors">
+                <i data-lucide="chevron-down" class="w-5 h-5 text-gray-600 transition-transform duration-300 faq-icon"></i>
+              </div>
+            </button>
+            <div class="p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-50 faq-answer hidden">
+              Poucos minutos por dia já são suficientes para estimular os músculos corretamente.
+            </div>
+          </div>
+
+          <!-- Accordion 4 -->
+          <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:border-purple-200 transition-colors faq-toggle-container reveal">
+            <button type="button" class="w-full flex items-center justify-between p-5 text-left bg-white faq-toggle">
+              <span class="font-semibold text-gray-800 pr-4 text-lg">É para qualquer idade?</span>
+              <div class="p-1 rounded-full bg-gray-100 transition-colors">
+                <i data-lucide="chevron-down" class="w-5 h-5 text-gray-600 transition-transform duration-300 faq-icon"></i>
+              </div>
+            </button>
+            <div class="p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-50 faq-answer hidden">
+              Sim! Quanto antes começar, melhor. Mas mulheres em qualquer fase podem se beneficiar.
+            </div>
+          </div>
+
+          <!-- Accordion 5 -->
+          <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:border-purple-200 transition-colors faq-toggle-container reveal">
+            <button type="button" class="w-full flex items-center justify-between p-5 text-left bg-white faq-toggle">
+              <span class="font-semibold text-gray-800 pr-4 text-lg">Posso cancelar?</span>
+              <div class="p-1 rounded-full bg-gray-100 transition-colors">
+                <i data-lucide="chevron-down" class="w-5 h-5 text-gray-600 transition-transform duration-300 faq-icon"></i>
+              </div>
+            </button>
+            <div class="p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-50 faq-answer hidden">
+              Sim. Você tem 90 dias de garantia para testar.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-16 text-center reveal">
+          <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 inline-block w-full md:w-auto">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Ainda com dúvidas?</h3>
+            <p class="text-gray-600 mb-6">Comece hoje e comprove os resultados.</p>
+            <a href="#pricing" class="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:shadow-green-500/30 transition-all transform hover:-translate-y-1 w-full md:w-auto">
+              QUERO COMEÇAR AGORA
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="mb-6 flex items-center justify-center gap-2">
+          <span class="text-2xl">💆‍♀️</span>
+          <span class="text-lg font-bold tracking-wider">YOGA FACIAL!</span>
+        </div>
+        <p class="text-gray-400 text-sm mb-4">
+          Seu rosto mais firme começa aqui.
+        </p>
+        <div class="text-gray-500 text-xs text-center">
+          &copy; <span id="year">2026</span> Yoga Facial!. Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="/script.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
