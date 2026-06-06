@@ -45,7 +45,7 @@ export const PLANS: Plan[] = [
     ],
     description: "Por menos do que o valor de um único creme anti-idade. Você paga uma vez… e pode transformar seu rosto pelos próximos meses.",
     cta: "QUERO O COMPLETO",
-    link: "{{LINK_COMPRA}}",
+    link: import.meta.env.VITE_LINK_COMPRA || "{{LINK_COMPRA}}",
     isPopular: true,
     highlight: "MELHOR CUSTO-BENEFÍCIO"
   },
@@ -57,7 +57,7 @@ export const PLANS: Plan[] = [
     ],
     description: "Perfeito para quem quer começar agora.",
     cta: "QUERO O BÁSICO",
-    link: "{{LINK_COMPRA}}",
+    link: import.meta.env.VITE_LINK_COMPRA || "{{LINK_COMPRA}}",
     isPopular: false
   }
 ];
